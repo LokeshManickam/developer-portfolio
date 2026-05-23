@@ -17,26 +17,31 @@ const About = () => {
 
           <div className="about-text">
             <p>
-              I’m Lokesh Manickam, a passionate software developer currently
-              focused on building modern web applications using React.js,
-              JavaScript, HTML, and CSS. I enjoy creating responsive and
-              interactive user interfaces with clean design and smooth user
-              experience.
+              I’m Lokesh Manickam, a passionate Full Stack and React Developer focused on
+              building modern, responsive, and user-friendly web applications. I enjoy
+              creating clean UI designs, smooth user experiences, and scalable
+              applications using modern technologies.
             </p>
 
             <p>
-              Along with frontend development, I also work with Java,
-              Object-Oriented Programming, Data Structures, and backend concepts
-              to strengthen my full stack development skills. I love learning new
-              technologies and improving my development workflow through real-world
-              projects.
+              My primary skills include React.js, JavaScript, HTML, CSS, Node.js,
+              Express.js, MongoDB, Java, and REST API integration. I have developed
+              real-world projects such as Task Management Systems, Expense Tracker
+              Applications, Student Management Systems, and responsive portfolio websites
+              using MERN stack technologies.
             </p>
 
             <p>
-              Being an Electrical and Electronics Engineering student, I also have
-              interest in IoT and embedded systems. My goal is to grow as a React
-              and full stack developer, build impactful applications, and
-              contribute to innovative software solutions.
+              Along with software development, I also explore IoT and embedded systems as
+              an Electrical and Electronics Engineering student. I enjoy combining
+              hardware and software to build smart solutions and continuously improving my
+              skills in full stack development and modern UI/UX design.
+            </p>
+
+            <p>
+              My goal is to grow as a professional software engineer, contribute to
+              impactful projects, and build innovative applications that deliver great
+              user experiences.
             </p>
           </div>
 

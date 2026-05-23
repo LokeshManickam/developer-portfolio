@@ -2,11 +2,15 @@ import ProjectCard from "../components/ProjectCard";
 import bankImg from "../assets/images/bank-management.png";
 import portfolioImg from "../assets/images/portfolio-website.png";
 import studentImg from "../assets/images/student-management.png";
+import expenseImg from "../assets/images/Expense-Tracker-Application.png";
+import iotaiImg from "../assets/images/iot-ai-predictive-maintenance.png";
+import todoImg from "../assets/images/to-do-list.png"
+import taskImg from "../assets/images/taskmanager.png";
 
 const projects = [
   {
     title: "Task Management System",
-    image: "/images/taskmanager.png",
+    image: taskImg,
     description:
       "Developed a full-stack Task Management System with authentication, task creation, priority management, status tracking, and responsive dashboard UI using modern MERN stack technologies.",
 
@@ -25,7 +29,7 @@ const projects = [
 
   {
     title: "Portfolio Website",
-    image: "/images/portfolio.png",
+    image: portfolioImg,
     description:
       "Designed and developed a modern responsive portfolio website with smooth animations, reusable React components, backend-integrated contact form, and professional UI design.",
 
@@ -43,7 +47,7 @@ const projects = [
 
   {
     title: "Student Management System",
-    image: "/images/student.png",
+    image: studentImg,
     description:
       "Built a CRUD-based Student Management System for managing student records including adding, updating, deleting, and searching data with API integration.",
 
@@ -61,7 +65,7 @@ const projects = [
 
   {
     title: "Expense Tracker Application",
-    image: "/images/expense.png",
+    image: expenseImg,
     description:
       "Created an Expense Tracker application with transaction history, category management, analytics dashboard, and graphical expense visualization for personal finance tracking.",
 
@@ -79,7 +83,7 @@ const projects = [
 
   {
     title: "To-Do List Application",
-    image: "/images/todo.png",
+    image: todoImg,
     description:
       "Developed a responsive To-Do List application with task filtering, completion tracking, local storage persistence, and clean modern user interface design.",
 
@@ -96,7 +100,7 @@ const projects = [
 
   {
     title: "IoT & AI-Based Predictive Agriculture Pump System",
-    image: "/images/agriculture-pump.png",
+    image: iotaiImg,
     description:
       "Developed an intelligent agriculture monitoring and predictive pump control system using IoT sensors and AI-based analysis to optimize water usage, monitor soil conditions, and automate irrigation efficiently.",
 
