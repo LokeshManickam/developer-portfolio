@@ -1,7 +1,7 @@
 import ProjectCard from "../components/ProjectCard";
 import bankImg from "../assets/images/bank-management.png";
 import portfolioImg from "../assets/images/portfolio-website.png";
-import studentImg from "../assets/images/student-management.png";
+import studentImg from "../assets/images/student-https://github.com/yourusername/task-management-systemmanagement.png";
 import expenseImg from "../assets/images/Expense-Tracker-Application.png";
 import iotaiImg from "../assets/images/iot-ai-predictive-maintenance.png";
 import todoImg from "../assets/images/to-do-list.png"
@@ -23,8 +23,7 @@ const projects = [
       "CSS"
     ],
 
-    github: "https://github.com/yourusername/task-management-system",
-    live: "https://your-live-demo-link.com"
+    github: "https://github.com/LokeshManickam/Task_Management"
   },
 
   {
@@ -41,8 +40,8 @@ const projects = [
       "Express"
     ],
 
-    github: "https://github.com/yourusername/portfolio",
-    live: "https://your-live-demo-link.com"
+    github: "https://github.com/LokeshManickam/developer-portfolio",
+    live: "https://www.lokeshmanickam.online/"
   },
 
   {
@@ -59,8 +58,7 @@ const projects = [
       "REST API"
     ],
 
-    github: "https://github.com/yourusername/student-management",
-    live: "https://your-live-demo-link.com"
+    github: "https://github.com/LokeshManickam/student-management-system"
   },
 
   {
@@ -77,8 +75,7 @@ const projects = [
       "CSS"
     ],
 
-    github: "https://github.com/yourusername/expense-tracker",
-    live: "https://your-live-demo-link.com"
+    github: "https://github.com/LokeshManickam/ExpenseTracker"
   },
 
   {
@@ -94,10 +91,9 @@ const projects = [
       "Local Storage"
     ],
 
-    github: "https://github.com/yourusername/todo-app",
-    live: "https://your-live-demo-link.com"
-  },
+    github: "https://github.com/LokeshManickam/ToDoList"
 
+  },
   {
     title: "IoT & AI-Based Predictive Agriculture Pump System",
     image: iotaiImg,
@@ -113,7 +109,7 @@ const projects = [
       "Arduino IDE"
     ],
 
-    github: "https://github.com/yourusername/agriculture-pump-system"
+    github: "https://github.com/LokeshManickam/IOT-AND-AI-BASED-PREDICTIVE-MAINTENANCE-SYSTEM-FOR-AGRICULTURAL-IRRIGATION-PUMPS"
   }
 ];
 
