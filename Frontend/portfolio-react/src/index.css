@@ -1202,7 +1202,7 @@ section{
 
   width:36vw;
 
-  max-width:675px;
+  max-width:615px;
   min-width:280px;
 
   z-index:2;
@@ -1267,7 +1267,7 @@ section{
 ========================================= */
 
 .about-section{
-  height: 100vh;
+  height: 105vh;
   background:#888888;
   padding:80px 10%;
 }
@@ -1277,13 +1277,13 @@ section{
   align-items:center;
   justify-content:center;
 
-  gap:80px;
+  gap:60px;
 
-  margin-top:60px;
+  margin-top:50px;
 }
 
 .about-image img{
-  width:460px;
+  width:480px;
   height: auto;
   border-radius:14px;
 }
@@ -1291,8 +1291,7 @@ section{
 .about-text{
   max-width:950px;
 
-  text-align:left;
-  justify-content:space-around;
+  text-align:justify;
 
   font-size:24px;
   line-height:1.5;
@@ -1369,7 +1368,7 @@ section{
 
 .projects-section{
   background:#888888;
-  padding:80px 7%;
+  padding:80px 10%;
 }
 
 .projects-grid{
@@ -1380,7 +1379,7 @@ section{
 
   justify-content: center;
 
-  gap:28px;
+  gap:29px;
 }
 
 .project-card{
@@ -1392,9 +1391,9 @@ section{
   display: flex;
   flex-direction: column;
   
-  width: 480px;
+  width: 420px;
 
-  height: 680px;
+  height: 720px;
 
   transition:0.3s;
 }
@@ -1488,7 +1487,7 @@ section{
 ========================================= */
 
 .services-section{
-  height: 95vh;
+  height: 120vh;
   background:#888888;
   padding:70px 7%;
 }
