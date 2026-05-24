@@ -72,7 +72,7 @@ const Contact = () => {
 
           <p>
             <i className="fa-solid fa-location-dot"></i>
-            KURINJIPADI, TAMIL NADU, INDIA
+            CHENNAI, INDIA
           </p>
 
         </div>

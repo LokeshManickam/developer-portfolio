@@ -3,21 +3,23 @@ import ServiceCard from "../components/ServiceCard";
 const services = [
   {
     icon: "fa-solid fa-code",
-    title: "Web Development",
+    title: "Frontend Development",
     description:
-      "I develop modern and responsive websites using HTML, CSS and JavaScript.",
+      "I build modern, responsive, and interactive web applications using React.js, JavaScript, HTML, CSS, and reusable UI components with clean user experience design.",
   },
+
   {
     icon: "fa-solid fa-server",
-    title: "Backend Development",
+    title: "Full Stack Development",
     description:
-      "I build secure backend systems using Java and APIs with database integration.",
+      "I develop full stack applications using React, Node.js, Express.js, REST APIs, MongoDB, and Java to create scalable and efficient web solutions.",
   },
+
   {
     icon: "fa-solid fa-microchip",
-    title: "IoT & Embedded Systems",
+    title: "IoT & Smart Systems",
     description:
-      "I create smart systems using sensors and microcontrollers.",
+      "I work on IoT and embedded projects using ESP32, sensors, automation, and AI-based monitoring systems for smart real-world applications.",
   },
 ];
 
