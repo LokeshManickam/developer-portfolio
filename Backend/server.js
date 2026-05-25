@@ -14,7 +14,7 @@ connectDB();
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://yourdomain.com"
+        "https://lokeshmanickam.online/"
     ]
 }));
 app.use(express.json());
