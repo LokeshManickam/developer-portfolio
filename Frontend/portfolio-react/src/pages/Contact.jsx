@@ -63,6 +63,7 @@ const Contact = () => {
           <p>
             <i className="fa-solid fa-envelope"></i>
             lokeshmanickam2005@gmail.com
+            
           </p>
 
           <p>
