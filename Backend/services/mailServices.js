@@ -2,8 +2,12 @@ const nodemailer = require("nodemailer");
 
 const sendMail = async ({ name, mobile, email, message }) => {
     try {
+
         const transporter = nodemailer.createTransport({
-            service: "gmail",
+            host: "smtp.hostinger.com",
+            port: 465,
+            secure: true,
+
             auth: {
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASS
@@ -11,11 +15,17 @@ const sendMail = async ({ name, mobile, email, message }) => {
         });
 
         const mailOptions = {
-            from: email,
+            from: process.env.EMAIL_USER,
+
             to: process.env.EMAIL_USER,
+
+            replyTo: email,
+
             subject: "New Portfolio Contact Message",
+
             html: `
-                <h3>New Contact Message</h3>
+                <h2>Portfolio Contact</h2>
+
                 <p><strong>Name:</strong> ${name}</p>
                 <p><strong>Mobile:</strong> ${mobile}</p>
                 <p><strong>Email:</strong> ${email}</p>
@@ -24,6 +34,8 @@ const sendMail = async ({ name, mobile, email, message }) => {
         };
 
         await transporter.sendMail(mailOptions);
+
+        console.log("Email Sent Successfully");
 
     } catch (error) {
         console.log("Mail error:", error);
