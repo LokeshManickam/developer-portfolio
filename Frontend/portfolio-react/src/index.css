@@ -14,10 +14,20 @@ html{
   scroll-behavior:smooth;
 }
 
+html,
+body{
+  overflow-x:hidden;
+  width:100%;
+}
+
 body{
   background:#8f8f8f;
-  overflow-x:hidden;
   font-family:"Poppins",sans-serif;
+}
+
+img{
+  max-width:100%;
+  display:block;
 }
 
 section{
@@ -27,7 +37,7 @@ section{
 }
 
 .section-title{
-  font-size:62px;
+  font-size:clamp(2.8rem,5vw,62px);
   font-weight:700;
   color:#222;
   text-align:center;
@@ -63,6 +73,7 @@ section{
 .navbar{
   position:fixed;
   top:20px;
+  left:0;
   width:100%;
   display:flex;
   justify-content:center;
@@ -179,8 +190,10 @@ section{
 
   text-align:center;
 
-  font-size:7.5vw;
+  font-size:clamp(4rem,7.5vw,9rem);
+
   line-height:1;
+  letter-spacing:2px;
 
   font-weight:450;
 
@@ -195,14 +208,12 @@ section{
   position:absolute;
   bottom:0;
 
-  width:36vw;
+  width:min(36vw,650px);
 
   max-width:675px;
   min-width:280px;
 
   z-index:2;
-
-  display:block;
 }
 
 .hero-buttons{
@@ -266,7 +277,8 @@ section{
 
   text-align:justify;
 
-  font-size:22px;
+  font-size:clamp(1rem,1.5vw,22px);
+
   line-height:1.7;
 
   color:#111;
@@ -312,9 +324,6 @@ section{
 
   width:max-content;
 
-  font-size:42px;
-  color:#222;
-
   animation:scroll 20s linear infinite;
 }
 
@@ -322,15 +331,127 @@ section{
   animation-play-state:paused;
 }
 
+.tech-track i{
+  font-size:58px;
+
+  opacity:0.9;
+
+  transition:0.35s ease;
+
+  cursor:pointer;
+}
+
+/* ICON COLORS */
+
+.fa-java{
+  color:#d17d1f;
+}
+
+.fa-js{
+  color:#e6cf18;
+  animation:jsGlow 2s ease-in-out infinite alternate;
+}
+
+.fa-html5{
+  color:#d84924;
+}
+
+.fa-css3-alt{
+  color:#2456d6;
+}
+
+.fa-react{
+  color:#4cc9f0;
+  animation:reactRotate 10s linear infinite;
+}
+
+.fa-node-js{
+  color:#3fa34d;
+  animation:nodePulse 2.5s ease-in-out infinite;
+}
+
+.fa-git-alt{
+  color:#d94c2a;
+  animation:gitBounce 2s ease-in-out infinite;
+}
+
+.fa-github{
+  color:#111111;
+}
+
+.fa-npm{
+  color:#c43636;
+}
+
+.fa-database{
+  color:#34a853;
+  animation:dbFloat 3s ease-in-out infinite;
+}
+
+/* HOVER */
+
 .tech-track i:hover{
-  color:#4f4f4f;
+  transform:translateY(-8px) scale(1.15);
 
-  transform:scale(1.3);
+  opacity:1;
 
-  text-shadow:
-    0 0 10px #cecece,
-    0 0 20px #a6a6a6,
-    0 0 30px #838383;
+  filter:drop-shadow(0 0 12px rgba(255,255,255,0.18));
+}
+
+/* ANIMATIONS */
+
+@keyframes reactRotate{
+  from{
+    transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes nodePulse{
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.12);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+}
+
+@keyframes gitBounce{
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-8px);
+  }
+}
+
+@keyframes dbFloat{
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+}
+
+@keyframes jsGlow{
+  from{
+    filter:drop-shadow(0 0 2px rgba(255,223,0,0.2));
+  }
+
+  to{
+    filter:drop-shadow(0 0 10px rgba(255,223,0,0.5));
+  }
 }
 
 @keyframes scroll{
@@ -356,7 +477,7 @@ section{
 
   justify-content:center;
 
-  gap:28px;
+  gap:25px;
 }
 
 .project-card{
@@ -368,8 +489,10 @@ section{
   display:flex;
   flex-direction:column;
 
-  width:420px;
-  height:700px;
+  width:100%;
+  max-width:480px;
+
+  min-height:700px;
 
   transition:0.3s;
 }
@@ -463,7 +586,7 @@ section{
 
 .services-section{
   background:#888888;
-  padding:70px 7%;
+  padding:190px 7%;
 }
 
 .services-grid{
@@ -520,7 +643,7 @@ section{
 .contact-content{
   display:grid;
 
-  grid-template-columns:1fr 430px;
+  grid-template-columns:1fr minmax(320px,430px);
 
   gap:50px;
 
@@ -697,6 +820,7 @@ section{
   transition:0.3s;
 }
 
+
 .footer-social a:hover{
   transform:scale(1.2);
   color:#aaaaaa;
@@ -707,11 +831,6 @@ section{
 ========================================= */
 
 @media screen and (max-width:768px){
-
-  html,
-  body{
-    overflow-x:hidden;
-  }
 
   section{
     padding:110px 20px 70px;
@@ -788,7 +907,7 @@ section{
   }
 
   .hero-img{
-    width: 80vw;
+    width:80vw;
     max-width:390px;
   }
 
@@ -852,9 +971,8 @@ section{
   }
 
   .project-card{
-    width:100%;
     max-width:360px;
-    height:auto;
+    min-height:auto;
   }
 
   .contact-content{

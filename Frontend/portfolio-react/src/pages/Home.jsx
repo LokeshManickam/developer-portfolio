@@ -1,4 +1,5 @@
 import heroImg from "../assets/images/LokeshManickam.png";
+import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   return (
@@ -6,8 +7,16 @@ const Home = () => {
 
       {/* TEXT */}
       <h1 className="hero-title">
-        Hi! I'm <span>Lokesh Manickam</span>
-      </h1>
+  <Typewriter
+    words={["Hi, I'm Lokesh Manickam"]}
+    loop={1}
+    cursor
+    cursorStyle="|"
+    typeSpeed={120}
+    deleteSpeed={70}
+    delaySpeed={3000}
+  />
+</h1>
 
       {/* IMAGE */}
       <img src={heroImg} alt="Lokesh" className="hero-img" />
