@@ -7,16 +7,16 @@ const Home = () => {
 
       {/* TEXT */}
       <h1 className="hero-title">
-  <Typewriter
-    words={["Hi, I'm Lokesh Manickam"]}
-    loop={1}
-    cursor
-    cursorStyle="|"
-    typeSpeed={120}
-    deleteSpeed={70}
-    delaySpeed={3000}
-  />
-</h1>
+        <Typewriter
+          words={["Hi, I'm Lokesh Manickam"]}
+          loop={1}
+          cursor
+          cursorStyle="|"
+          typeSpeed={120}
+          deleteSpeed={70}
+          delaySpeed={3000}
+        />
+      </h1>
 
       {/* IMAGE */}
       <img src={heroImg} alt="Lokesh" className="hero-img" />
@@ -35,6 +35,16 @@ const Home = () => {
         <a href="#about" className="secondary-btn">
           Who I Am
         </a>
+
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="secondary-btn"
+        >
+          Resume
+        </a>
+
       </div>
 
     </section>
